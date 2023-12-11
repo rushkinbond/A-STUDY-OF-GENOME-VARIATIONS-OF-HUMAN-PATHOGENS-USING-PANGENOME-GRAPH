@@ -67,6 +67,8 @@ Presentation of comparative analyses through visual aids, charts, or diagrams to
    vg view -AJ merged_modified.gfa > merged_modified.vg
    vg view merged_modified.vg > final_file.gfa
 
+## Use Bandage tool to visualize the above pangenome file which is stored in gfa format
+
 ## Commands for finding sequence variation with help of Mumer3
    nucmer reference.fasta query.fasta -p output_prefix
    show-coords -rcl output_prefix.delta > alignment_details.txt
