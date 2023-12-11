@@ -56,7 +56,7 @@ Presentation of comparative analyses through visual aids, charts, or diagrams to
    cat a.fa b.fa c.fa > abc.fa
    seqwish -s abc.fa -p a.paf,b.paf -g abc.gfa
 
-### finding variation graph with help of vg tool the commands are
+## Commands for finding variation graph with help of vg tool the commands are
    vg view -AJ file1.gfa > file1.vg
    vg view -AJ file2.gfa > file2.vg
    vg combine file1.vg file2.vg > file.vg
@@ -67,5 +67,23 @@ Presentation of comparative analyses through visual aids, charts, or diagrams to
    vg view -AJ merged_modified.gfa > merged_modified.vg
    vg view merged_modified.vg > final_file.gfa
 
-### 
+## Commands for finding sequence variation with help of Mumer3
+   nucmer reference.fasta query.fasta -p output_prefix
+   show-coords -rcl output_prefix.delta > alignment_details.txt
+
+## Commands for creating summary of differences
+   dnadiff reference.fasta query.fasta -p output_directory
+
+## Findings and Conclusion
+In this study, we embarked on a comprehensive exploration of the pangenome concept, diverging from reliance on a singular reference genome to construct pangenome graphs for various COVID-19 variants, including Alpha, Beta, Delta, and Omicron. Our analysis also encompassed the creation of a country-specific pangenome graph, incorporating the Alpha, Beta, and Omicron variants.
+
+Through this exploration, we successfully generated pangenome graphs that provided a holistic view of the genetic diversity present within these variants across multiple countries. Furthermore, our investigation uncovered significant structural differences between these variants, shedding light on their genomic distinctiveness.
+
+Moreover, our analysis extended to comparing and contrasting the structural dissimilarities between two DNA sequences, revealing nuanced disparities that contribute to the unique genetic makeup of these variants. These differences underscore the importance of adopting a pangenome-based approach, allowing for a deeper understanding of the genetic variations and structural changes present within different COVID-19 variants.
+
+By unraveling these intricacies in genetic composition and structural variations, our study underscores the significance of pangenomics in elucidating the evolving nature of pathogens like the SARS-CoV-2 virus. These findings hold promise for informing targeted interventions, such as vaccine development and surveillance strategies, by considering the diverse genomic landscapes present across various COVID-19 variants.
+
+
+
+
 
