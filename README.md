@@ -28,3 +28,16 @@ Visualization of pangenome graphs using suitable software or tools to represent 
 Presentation of comparative analyses through visual aids, charts, or diagrams to illustrate the differences in genetic structures.
 
 ## Install all the necessary tools requried for this project
+1) minigraph - This tool is used to generate a pangenome graph with help of a reference genome.
+   download the tool from https://github.com/rushkinbond/minigraph
+2) vg tool - this tool is used to identify structural changes in vg format. 
+   download the tool from https://github.com/rushkinbond/vg
+3) seqwish and wfmash - These tools are used to convert fasta files to gfa files.
+   download the tools from https://github.com/rushkinbond/seqwish and https://github.com/rushkinbond/wfmash
+4) bandage - This tool is used to visualize the pangenome graph
+   download the tool from https://github.com/rushkinbond/Bandage
+5) Mumer3 - This tool is used to find structura variation in fasta files.
+   download the package from https://github.com/rushkinbond/MUMmer3
+6) gfatools - This tool is used to convert gfa to fasta 
+   download the package from https://github.com/rushkinbond/gfatools
+   
