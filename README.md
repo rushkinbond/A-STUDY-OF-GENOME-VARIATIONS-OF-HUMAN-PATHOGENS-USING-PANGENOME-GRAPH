@@ -47,7 +47,7 @@ Presentation of comparative analyses through visual aids, charts, or diagrams to
 ## Commands to Construct a pangenome when we have fasta files
 
 ### when we have single fasta file 
-wfmash file1.fa file1.fa -X > file1.paf.
+###### wfmash file1.fa file1.fa -X > file1.paf.
 seqwish -s file1.fa -p file1.paf -g file1.gfa.
    
 ### when we have multiple fasta files and we want to get one gfa file from it 
