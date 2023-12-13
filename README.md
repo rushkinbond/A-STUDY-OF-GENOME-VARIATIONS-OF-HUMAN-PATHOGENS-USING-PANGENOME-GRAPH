@@ -42,39 +42,39 @@ Presentation of comparative analyses through visual aids, charts, or diagrams to
    download the package from https://github.com/rushkinbond/gfatools
    
 ## Commands to Construct a pangenome with help of reference genome by minigraph
-   ./minigraph -cxggs -l10k referencefile.gfa file1.fa file2.fa > output.gfa
+######   ./minigraph -cxggs -l10k referencefile.gfa file1.fa file2.fa > output.gfa
 
 ## Commands to Construct a pangenome when we have fasta files
 
 ### when we have single fasta file 
 ###### wfmash file1.fa file1.fa -X > file1.paf.
-seqwish -s file1.fa -p file1.paf -g file1.gfa.
+###### seqwish -s file1.fa -p file1.paf -g file1.gfa.
    
 ### when we have multiple fasta files and we want to get one gfa file from it 
-   wfmash c.fa a.fa > a.paf
-   wfmash c.fa b.fa > b.paf
-   cat a.fa b.fa c.fa > abc.fa
-   seqwish -s abc.fa -p a.paf,b.paf -g abc.gfa
+######   wfmash c.fa a.fa > a.paf
+######   wfmash c.fa b.fa > b.paf
+######   cat a.fa b.fa c.fa > abc.fa
+######   seqwish -s abc.fa -p a.paf,b.paf -g abc.gfa
 
 ## Commands for finding variation graph with help of vg tool the commands are
-   vg view -AJ file1.gfa > file1.vg
-   vg view -AJ file2.gfa > file2.vg
-   vg combine file1.vg file2.vg > file.vg
-   vg view file.vg > file.gfa
+######   vg view -AJ file1.gfa > file1.vg
+######   vg view -AJ file2.gfa > file2.vg
+######   vg combine file1.vg file2.vg > file.vg
+######   vg view file.vg > file.gfa
 
    #### or 
-   cat file1.gfa file2.gfa > merged_modified.gfa
-   vg view -AJ merged_modified.gfa > merged_modified.vg
-   vg view merged_modified.vg > final_file.gfa
+######   cat file1.gfa file2.gfa > merged_modified.gfa
+######   vg view -AJ merged_modified.gfa > merged_modified.vg
+######   vg view merged_modified.vg > final_file.gfa
 
 ## Use Bandage tool to visualize the above pangenome file which is stored in gfa format
 
 ## Commands for finding sequence variation with help of Mumer3
-   nucmer reference.fasta query.fasta -p output_prefix
-   show-coords -rcl output_prefix.delta > alignment_details.txt
+######   nucmer reference.fasta query.fasta -p output_prefix
+######   show-coords -rcl output_prefix.delta > alignment_details.txt
 
 ## Commands for creating summary of differences
-   dnadiff reference.fasta query.fasta -p output_directory
+######   dnadiff reference.fasta query.fasta -p output_directory
 
 ## Findings and Conclusion
 In this study, we embarked on a comprehensive exploration of the pangenome concept, diverging from reliance on a singular reference genome to construct pangenome graphs for various COVID-19 variants, including Alpha, Beta, Delta, and Omicron. Our analysis also encompassed the creation of a country-specific pangenome graph, incorporating the Alpha, Beta, and Omicron variants.
