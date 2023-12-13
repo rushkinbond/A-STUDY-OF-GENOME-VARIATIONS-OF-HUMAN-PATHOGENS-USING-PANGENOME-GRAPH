@@ -76,6 +76,9 @@ Presentation of comparative analyses through visual aids, charts, or diagrams to
 ## Commands for creating summary of differences
 ######   dnadiff reference.fasta query.fasta -p output_directory
 
+## Commands for converting gfa to fasta
+######   ./gfatools gfa2fa test/MT.gfa > MT-seg.fa
+
 ## Findings and Conclusion
 In this study, we embarked on a comprehensive exploration of the pangenome concept, diverging from reliance on a singular reference genome to construct pangenome graphs for various COVID-19 variants, including Alpha, Beta, Delta, and Omicron. Our analysis also encompassed the creation of a country-specific pangenome graph, incorporating the Alpha, Beta, and Omicron variants.
 
